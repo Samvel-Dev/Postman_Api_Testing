@@ -1,0 +1,88 @@
+{
+  "info": {
+    "_postman_id": "06a9d389-08f9-43ee-bea8-66eecd3e8e02",
+    "name": "Trello API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40097697"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"userName\": \"samvi1\",\r\n\"firstName\": \"samvi\", \r\n\"midName\": \"jon\", \r\n\"lastName\": \"simeonov\", \r\n\"email\": \"samvi123@gmail.com\", \r\n\"password\": \"samvi123\", \r\n\"rePassword\": \"samvi123\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/User/Create",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "User",
+            "Create"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": "https://api.trello.com"
+    },
+    {
+      "key": "trelloKey",
+      "value": "YOUR_API_KEY"
+    },
+    {
+      "key": "trelloToken",
+      "value": "YOUR_API_TOKEN"
+    },
+    {
+      "key": "boardName",
+      "value": "Learning Postman"
+    },
+    {
+      "key": "boardID",
+      "value": "6862026bcd21edb2afd0f93d"
+    },
+    {
+      "key": "uniqueListName",
+      "value": "DONE"
+    }
+  ]
+}
